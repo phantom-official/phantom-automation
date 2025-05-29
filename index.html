@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Automation - Solutions</title>
+    <link rel="icon" href="phantom_automation_logo.png" type="image/png"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Futuristic Color Palette (copied for consistency) */
+            --primary-bg: #1a1a2e;
+            --header-footer-bg: #0f0f1d;
+            --header-footer-text: #e0e0e0;
+            --content-bg: #2a2a4a;
+            --content-text: #c0c0e0;
+            --accent-electric-blue: #00FFFF;
+            --accent-deep-purple: #8A2BE2;
+            --shadow-glow-blue: rgba(0, 255, 255, 0.3);
+            --shadow-glow-purple: rgba(138, 43, 226, 0.4);
+            --text-glow: 0 0 5px var(--accent-electric-blue), 0 0 10px var(--accent-electric-blue);
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-bg);
+            color: var(--content-text);
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--header-footer-bg);
+            color: var(--header-footer-text);
+            padding: 30px 0;
+            box-shadow: 0 2px 15px var(--shadow-glow-blue);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+        }
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: var(--text-glow);
+        }
+        .container {
+            padding: 30px;
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: var(--content-bg);
+            border-radius: 12px;
+            box-shadow: 0 0 20px var(--shadow-glow-purple);
+            flex-grow: 1;
+            border: 1px solid rgba(138, 43, 226, 0.1);
+        }
+        .container p {
+            color: var(--content-text);
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        
+        .automation-category-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+        .automation-category-list li {
+            margin-bottom: 20px;
+        }
+        .automation-category-list a {
+            display: block;
+            padding: 20px 30px;
+            background-color: var(--header-footer-bg); /* Dark background for buttons */
+            color: var(--accent-electric-blue); /* Electric blue text */
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
+            font-size: 1.3em;
+            font-weight: 600;
+            text-shadow: var(--text-glow);
+            border: 2px solid var(--accent-electric-blue);
+        }
+        .automation-category-list a:hover {
+            background-color: var(--accent-electric-blue); /* Invert colors on hover */
+            color: var(--header-footer-bg);
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px var(--shadow-glow-blue), inset 0 0 10px var(--shadow-glow-blue);
+            text-shadow: none; /* Remove text glow for better contrast on light background */
+        }
+
+
+        .back-home {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .back-home a {
+            color: var(--accent-deep-purple); /* Deep purple for back link */
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        .back-home a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 8px var(--accent-deep-purple);
+            color: var(--accent-electric-blue);
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px 0;
+            background-color: var(--header-footer-bg);
+            color: var(--header-footer-text);
+            font-size: 0.9em;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Phantom Automation</h1>
+        <p>Innovative solutions for a streamlined digital future.</p>
+    </header>
+
+    <div class="container">
+        <p>Explore our automation tools designed to simplify complex tasks and boost your productivity. We craft intelligent solutions across various categories.</p>
+
+        <ul class="automation-category-list">
+            <li><a href="playwright.html">Playwright Automation</a></li>
+            </ul>
+
+        <div class="back-home">
+            <p><a href="https://phantom-official.github.io/">Back to Phantom Homepage</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Phantom Automation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
