@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Automation - Playwright</title>
+    <link rel="icon" href="phantom_automation_logo.png" type="image/png"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Futuristic Color Palette (copied for consistency) */
+            --primary-bg: #1a1a2e;
+            --header-footer-bg: #0f0f1d;
+            --header-footer-text: #e0e0e0;
+            --content-bg: #2a2a4a;
+            --content-text: #c0c0e0;
+            --accent-electric-blue: #00FFFF;
+            --accent-deep-purple: #8A2BE2;
+            --shadow-glow-blue: rgba(0, 255, 255, 0.3);
+            --shadow-glow-purple: rgba(138, 43, 226, 0.4);
+            --text-glow: 0 0 5px var(--accent-electric-blue), 0 0 10px var(--accent-electric-blue);
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-bg);
+            color: var(--content-text);
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--header-footer-bg);
+            color: var(--header-footer-text);
+            padding: 30px 0;
+            box-shadow: 0 2px 15px var(--shadow-glow-blue);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+        }
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: var(--text-glow);
+        }
+        .container {
+            padding: 30px;
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: var(--content-bg);
+            border-radius: 12px;
+            box-shadow: 0 0 20px var(--shadow-glow-purple);
+            flex-grow: 1;
+            border: 1px solid rgba(138, 43, 226, 0.1);
+        }
+        .container p {
+            color: var(--content-text);
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        
+        .automation-tool-item {
+            margin-bottom: 40px; /* Spacing between each tool */
+            text-align: center;
+        }
+
+        .automation-tool-item h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2em;
+            color: var(--accent-electric-blue);
+            margin-bottom: 15px;
+            text-shadow: var(--text-glow);
+        }
+
+        .automation-tool-item .itch-embed-container {
+            text-align: center;
+            margin: 0 auto 20px auto; /* Centered with bottom margin */
+            padding: 15px; /* Inner padding for the container */
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.2); /* Slightly transparent dark background for embed */
+            box-shadow: 0 0 12px var(--shadow-glow-purple); /* Glow around embed */
+            border: 1px solid rgba(138, 43, 226, 0.1);
+            max-width: 580px; /* Adjust max-width to fit embed slightly */
+        }
+        .automation-tool-item .itch-embed-container iframe {
+            max-width: 100%;
+            height: 167px; /* Fixed height as per itch.io embed */
+            display: block;
+            margin: 0 auto;
+            border: none; /* Remove iframe's default border */
+        }
+
+
+        .back-home {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .back-home a {
+            color: var(--accent-deep-purple); /* Deep purple for back link */
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        .back-home a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 8px var(--accent-deep-purple);
+            color: var(--accent-electric-blue);
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px 0;
+            background-color: var(--header-footer-bg);
+            color: var(--header-footer-text);
+            font-size: 0.9em;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Playwright Automation</h1>
+        <p>Efficient tools for web automation powered by Playwright.</p>
+    </header>
+
+    <div class="container">
+        <p>Explore our specialized Playwright automation solutions designed to streamline your web interactions, testing, and data extraction needs.</p>
+
+        <div class="automation-tool-item">
+            <h2>Playwright - Form Filling</h2>
+            <div class="itch-embed-container">
+                <iframe frameborder="0" src="https://itch.io/embed/3500233" width="552" height="167">
+                    <a href="https://phantom-official-store.itch.io/form">Playwright - Form Filling by Phantom</a>
+                </iframe>
+            </div>
+            <p style="font-size:0.95em; margin-top: -10px; color:var(--content-text);">Automate repetitive form submissions with precision and speed using this Playwright solution.</p>
+        </div>
+
+        <div class="automation-tool-item">
+            <h2>Playwright - Screenshot</h2>
+            <div class="itch-embed-container">
+                <iframe frameborder="0" src="https://itch.io/embed/3500227" width="552" height="167">
+                    <a href="https://phantom-official-store.itch.io/screenshot">Playwright - Screenshot by Phantom</a>
+                </iframe>
+            </div>
+            <p style="font-size:0.95em; margin-top: -10px; color:var(--content-text);">Capture high-quality screenshots of web pages effortlessly, great for testing and documentation.</p>
+        </div>
+
+        <div class="back-home">
+            <p><a href="index.html">Back to Phantom Automation Home</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Phantom Automation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
